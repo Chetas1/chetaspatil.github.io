@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetas Patil - Staff Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.appeared {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline-content-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .timeline-item:hover .timeline-content-card {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Chetas Patil</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-100">Projects</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-100">Experience</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-100">Skills</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-20 fade-in">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                Staff Software Engineer
+            </h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                Specializing in Cloud Security (CSPM & DSPM) and high-performance system architecture. I build scalable, secure cloud solutions.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/chetas-patil-90823a117/" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/chetaspatil" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="mailto:chetaspatil.7@gmail.com" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 border-t border-gray-200 fade-in">
+            <h2 class="text-4xl font-bold text-center text-gray-900">About Me</h2>
+            <div class="mt-12 max-w-4xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-1 flex justify-center">
+                    <img src="https://drive.google.com/uc?export=view&id=1bc1wD4SN8CbKihinbn8v0JuPqjDIIMC2" alt="Chetas Patil" class="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover">
+                </div>
+                <div class="md:col-span-2 text-lg text-gray-700 space-y-4">
+                    <p>
+                        I am a Staff Software Engineer with over 8 years of hands-on experience in the tech industry. My expertise lies in architecting and developing robust Cloud Security Posture Management (CSPM) and Data Security Posture Management (DSPM) solutions.
+                    </p>
+                    <p>
+                        I have a proven track record of designing and implementing high-performance, scalable systems using Go, Python, and Kubernetes. I'm passionate about enhancing cloud security, optimizing system performance, and driving cost efficiency. My goal is to leverage my skills to build innovative and secure cloud-native applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Highlights Section -->
+        <section id="projects" class="py-20 border-t border-gray-200 bg-white -mx-6 px-6 fade-in">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900">Project Highlights</h2>
+                <div class="mt-16 max-w-3xl mx-auto relative">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-4 h-full w-1 bg-indigo-200 rounded-full"></div>
+
+                    <!-- Project Item -->
+                    <div class="timeline-item mb-12 pl-12 relative fade-in">
+                        <div class="timeline-marker absolute left-4 -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full mt-1.5 border-4 border-white"></div>
+                        <div class="timeline-content">
+                            <p class="text-indigo-600 font-semibold">2024 - Present</p>
+                            <h3 class="text-2xl font-bold text-gray-800">DSPM Entitlements & Databricks Integration</h3>
+                            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-2 timeline-content-card">
+                                <p class="text-gray-700">Currently enhancing DSPM by integrating Postgres and developing services to fetch entitlement data from MySQL, Postgres, and MSSQL. Also leading research for a future Databricks integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Item -->
+                    <div class="timeline-item mb-12 pl-12 relative fade-in">
+                        <div class="timeline-marker absolute left-4 -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full mt-1.5 border-4 border-white"></div>
+                        <div class="timeline-content">
+                            <p class="text-indigo-600 font-semibold">2023 - 2024</p>
+                            <h3 class="text-2xl font-bold text-gray-800">DSPM Data Scanner for GCP</h3>
+                             <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-2 timeline-content-card">
+                                <p class="text-gray-700">Architected and implemented a data scanning solution for GCP within customer environments. This involved designing secure network deployments (Managed vs. BYON) and logic for dynamic scanner deployment based on workloads and storage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Item -->
+                    <div class="timeline-item mb-12 pl-12 relative fade-in">
+                        <div class="timeline-marker absolute left-4 -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full mt-1.5 border-4 border-white"></div>
+                        <div class="timeline-content">
+                            <p class="text-indigo-600 font-semibold">2022 - 2023</p>
+                            <h3 class="text-2xl font-bold text-gray-800">Kubernetes Security (KSPM) for AKS</h3>
+                            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-2 timeline-content-card">
+                                <p class="text-gray-700">Took complete ownership of delivering KSPM for Azure Kubernetes Service (AKS), from initial research and design to implementation and production support. Created custom Kubernetes agents using CRDs to efficiently gather cluster data.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Item -->
+                    <div class="timeline-item mb-12 pl-12 relative fade-in">
+                        <div class="timeline-marker absolute left-4 -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full mt-1.5 border-4 border-white"></div>
+                        <div class="timeline-content">
+                            <p class="text-indigo-600 font-semibold">2021 - 2022</p>
+                            <h3 class="text-2xl font-bold text-gray-800">Asset Visibility Graph Development</h3>
+                             <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-2 timeline-content-card">
+                                <p class="text-gray-700">Led a team to build a new asset visibility graph from scratch using Golang and Neo4j. This project provided critical insights into resource relationships and hierarchies within the cloud environment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Item -->
+                    <div class="timeline-item mb-12 pl-12 relative fade-in">
+                        <div class="timeline-marker absolute left-4 -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full mt-1.5 border-4 border-white"></div>
+                        <div class="timeline-content">
+                            <p class="text-indigo-600 font-semibold">2020 - 2021</p>
+                            <h3 class="text-2xl font-bold text-gray-800">CSPM Monolith to Microservices</h3>
+                             <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-2 timeline-content-card">
+                                <p class="text-gray-700">Re-architected the entire CSPM product, migrating from a monolithic architecture to a modern, high-performance microservices system. Rewrote the platform in Golang and deployed on Kubernetes, with monitoring via Grafana.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Item -->
+                    <div class="timeline-item mb-12 pl-12 relative fade-in">
+                        <div class="timeline-marker absolute left-4 -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full mt-1.5 border-4 border-white"></div>
+                        <div class="timeline-content">
+                            <p class="text-indigo-600 font-semibold">2019 - 2020</p>
+                            <h3 class="text-2xl font-bold text-gray-800">CSPM Product Scaling</h3>
+                             <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-2 timeline-content-card">
+                                <p class="text-gray-700">Focused on scaling the CSPM product by implementing Cosmos DB partitioning, intelligent job scheduling, and cloud API rate limiting. Designed an event-driven architecture for horizontally scalable data processing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Item -->
+                    <div class="timeline-item pl-12 relative fade-in">
+                        <div class="timeline-marker absolute left-4 -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full mt-1.5 border-4 border-white"></div>
+                        <div class="timeline-content">
+                            <p class="text-indigo-600 font-semibold">2018 - 2019</p>
+                            <h3 class="text-2xl font-bold text-gray-800">CSPM AWS Integration</h3>
+                             <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-2 timeline-content-card">
+                                <p class="text-gray-700">Integrated AWS services into the CSPM platform, enabling the scanning of customer cloud resources to identify misconfigurations. I handled the end-to-end process from customer onboarding to scanning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 border-t border-gray-200 fade-in">
+            <h2 class="text-4xl font-bold text-center text-gray-900">Work Experience</h2>
+            <div class="mt-12 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-600">Zscaler</h3>
+                    <p class="text-gray-500 font-medium">Staff Software Engineer | 2020 - Present</p>
+                    <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                        <li>Architected and delivered GCP data scan services for Data Security Posture Management (DSPM), engineering a dual-mode solution to support both NAT and non-NAT environments, thereby expanding product compatibility.</li>
+                        <li>Spearheaded Kubernetes Security Posture Management (KSPM) enhancements on Azure by deploying targeted security controls, achieving a 10% improvement in posture scores.</li>
+                        <li>Engineered a custom Kubernetes agent using CRDs which improved the efficiency of resource data collection by 15%.</li>
+                        <li>Led the integration of Neo4j into the core CSPM product, building a production-ready data pipeline and visualization layer that doubled user insights and usability.</li>
+                        <li>Re-architected the flagship product from a monolith to a high-performance microservices system using Go and Kubernetes, resulting in a 20% gain in runtime efficiency.</li>
+                        <li>Optimized high-scale Cosmos DB workloads by redesigning the partitioning schema, which accelerated query performance by 20% and reduced database costs by 50%.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-600">Cloudneeti</h3>
+                    <p class="text-gray-500 font-medium">Cloud Platform Engineer | 2018 - 2020</p>
+                    <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                        <li>Co-engineered a multi-cloud CSPM solution for Azure and AWS, increasing system reliability from 40% to 60%.</li>
+                        <li>Drove the evolution of the core product by enabling its publication to the Azure Marketplace and integrating AWS data collection, which boosted customer accessibility by 40%.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-bold text-indigo-600">Excellon Software</h3>
+                    <p class="text-gray-500 font-medium">Associate Software Engineer | 2017 - 2018</p>
+                    <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                        <li>Developed and maintained a high-performance Dealership Management System using .NET and SQL Server.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="py-20 border-t border-gray-200 fade-in">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Technical Skills -->
+                <div>
+                    <h2 class="text-4xl font-bold text-center text-gray-900">Technical Skills</h2>
+                    <div class="mt-8 space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-lg mb-2">Languages</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Golang</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">.NET</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg mb-2">Cloud & Containerization</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Azure</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">AWS</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">GCP</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Kubernetes</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Docker</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Kafka</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg mb-2">Databases</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Neo4j</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Postgres</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">MongoDB</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">Cosmos DB</span>
+                                 <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certifications -->
+                <div>
+                    <h2 class="text-4xl font-bold text-center text-gray-900">Certifications</h2>
+                    <div class="mt-8 space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                            <i class="fas fa-award text-2xl text-indigo-500"></i>
+                            <div>
+                                <h4 class="font-bold">CKAD (Certified Kubernetes Application Developer)</h4>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                            <i class="fab fa-aws text-2xl text-yellow-500"></i>
+                            <div>
+                                <h4 class="font-bold">AWS Certified Developer – Associate</h4>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                            <i class="fab fa-google text-2xl text-blue-500"></i>
+                            <div>
+                                <h4 class="font-bold">Associate Cloud Engineer (Google Cloud)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 border-t border-gray-200 bg-white -mx-6 px-6 fade-in">
+             <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-900">Get In Touch</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to reach out.
+                </p>
+                <a href="mailto:chetaspatil.7@gmail.com" class="mt-8 inline-block bg-indigo-600 text-white text-lg font-semibold px-8 py-4 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-lg">
+                    Say Hello
+                </a>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2024 Chetas Patil. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                 <a href="https://www.linkedin.com/in/chetas-patil-90823a117/" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/chetaspatil" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="mailto:chetaspatil.7@gmail.com" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fas fa-envelope fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Fade-in animation on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appeared');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+</html>
